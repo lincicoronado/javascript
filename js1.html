@@ -14,15 +14,29 @@
         console.log ((4 + 6 + 9) / 77)
     </script>
     <script>
-    a = 10
-    console.log (a)
-    console.log (9 * a)
-    b = 7
-    console.log (b)
-    max = 57
-    actual = max - 13
-    percentage = actual / max
-    console.log (percentage)
+        a = 10
+        console.log (a)
+        console.log (9 * a)
+        b = 7
+        console.log (b)
+        max = 57
+        actual = max - 13
+        percentage = actual / max
+        console.log (percentage)
+    </script>
+    <h2>Javascript if ... else</h2>
+    <p id="demo"></p>
+    <script>
+        const time = new Date ().getHours();
+        let greeting;
+        if (time < 10) {
+            greeting = "Good Morning, Sunshine";
+        } else if (time < 20) {
+            greeting = "Have a good day!";
+        } else {
+            greeting = "Have a good evening";
+        }
+        document.getElementById("demo").innerHTML = greeting;
     </script>
 </body>
 </html>
