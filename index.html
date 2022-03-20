@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Write a function called add7 that takes one number and returns that number +7
+        let add7 = ((number) => number + 7);
+            console.log(add7(12));
+    
+        
+        // 2. Write a function called multiply that takes 2 humbers and return their product
+        
+        function multiply(factor1, factor2) {
+            return factor1 * factor2;
+        }
+        console.log(56 * 254)
+
+        // 3. Write a function called capitalize that takes a string and returns that string with only the first letter capitalized.
+        // Make sure that it can take strings that are in lowercase, uppercase or both
+
+        let string = prompt('Enter some text')
+        let firstLetter = null;
+        let restOfString = null;
+        let newString = null;
+
+        capitalize(string);
+
+        function capitalize(string) {
+            firstLetter = string.slice(0, 1);
+            firstLetter = firstLetter.toUpperCase();
+            restOfString = string.slice(1);
+            restOfString = restOfString.toLowerCase();
+            newString = (firstLetter + restOfString);
+        }
+
+        console.log(newString);
+        console.log(firstLetter);
+        console.log(restOfString);
+
+        // 4. Write a function called lastLetter that takes a string and returns the very last letter of that string
+        // lastLetter ("abcd") should return "d"
+        
+        let myWord = prompt("Enter a word. You'll get the last letter back.")
+        function lastLetter(myWord) {
+            let letter = myWord.slice(-1);
+            return letter;
+        }
+        
+        console.log(myWord)
+        console.log(lastLetter(myWord))
+
+    </script>
+</body>
+</html>
